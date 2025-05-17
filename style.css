@@ -1,0 +1,74 @@
+/* estilização da calc */
+.fundo {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   width: 250px;
+   height: 370px;
+   border-radius: 12px;
+   margin: 0 auto;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgb(172, 170, 170));
+}
+
+.fundo h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: corzinha 3s infinite;
+}
+
+.fundo table{
+ margin: 0 auto;
+}
+
+.fundo table td button{
+    padding: 15px;
+    margin: 0 1px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 4px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.fundo table td button:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+    color: black;
+    transform: scale(1.1);
+}
+
+#resultado{
+    background-color: #ffffff;
+    width: auto;
+    height: 40px;
+    margin: -15px 34px 10px;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+}
+/* animacao do titulo */
+@keyframes corzinha{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+
+    50%{
+        color: rgba(143, 143, 143, 0.815);
+    }
+
+    100%{
+        color: rgb(255, 255, 255);
+    }
+    
+    0%{
+        transform: scale(1.0);
+
+    }
+
+    50%{
+        transform: scale(1.02);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
